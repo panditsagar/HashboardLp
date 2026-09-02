@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HashBoard - Run Your Entire Agency From One Place</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cyber Grid Background & Ambient Lighting -->
+    <div class="bg-grid"></div>
+
+    <!-- SVG Dashed Rings -->
+    <svg class="rings-svg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- Biggest ring -->
+      <circle cx="50%" cy="25%" r="610" class="ring ring-biggest"/>
+      <!-- Outer ring -->
+      <circle cx="50%" cy="25%" r="510" class="ring ring-outer"/>
+      <!-- Middle ring -->
+      <circle cx="50%" cy="25%" r="410" class="ring ring-middle"/>
+    </svg>
+
+    <div class="glow-orb orb-left"></div>
+    <div class="glow-orb orb-right"></div>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-container">
+          <!-- Badge Callout -->
+          <!-- <div class="badge-wrapper">
+          <div class="badge">
+            <span class="badge-fire">🔥</span>
+            <span class="badge-text">6+ Tools Replaced <span class="badge-divider">|</span> <strong>1 HashBoard</strong></span>
+          </div>
+        </div>
+  -->
+
+          <!-- Main Headline -->
+          <h1 class="main-headline">
+            Your Agency Is A Business. <br />
+            Stop Running It On <span class="highlight-purple-box">Jugaad.</span>
+          </h1>
+
+          <!-- Sub-headline -->
+          <p class="sub-headline">
+            Run your entire agency from one place instead of jumping between
+            WhatsApp, Sheets, Notion, CRMs and a dozen other tools.
+          </p>
+
+          <!-- CTA Buttons Row (Dual Pill Buttons as in screenshot) -->
+          <div class="cta-wrapper dual-buttons">
+            <a href="#trial" class="btn-primary">
+              <span>Start Your Free Trial Now</span>
+              <i class="fa-solid fa-chevron-right btn-icon"></i>
+            </a>
+            <a href="#vslPlayer" class="btn-secondary">
+              <span>Watch 2-Min VSL</span>
+            </a>
+          </div>
+          <!-- All Included Tools & Features Grid (Smooth Marquee) -->
+          <div class="features-section">
+            <div class="marquee-wrapper">
+              <div class="marquee-track">
+                <!-- First Set -->
+                <div class="features-grid">
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-face-smile"></i> Face Attendance
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-money-check-dollar"></i> Payroll
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-folder-kanban"></i> Projects
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-list-check"></i> Tasks
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-users"></i> CRM
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-file-invoice-dollar"></i> Invoices
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-receipt"></i> Expenses
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-calendar-check"></i> Bookings
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-user-shield"></i> Client Portal
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-comments"></i> Team Chat
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-plane-departure"></i> Leaves
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-id-card"></i> KYC
+                  </div>
+                  <div class="feature-tag highlight-tag">
+                    <i class="fa-solid fa-robot"></i> AI Agent
+                  </div>
+                  <div class="feature-tag highlight-tag">
+                    <i class="fa-solid fa-brain"></i> ChatGPT / Claude
+                  </div>
+                  <div class="feature-tag highlight-tag">
+                    <i class="fa-solid fa-plug"></i> MCP
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-chart-pie"></i> Reports
+                  </div>
+                </div>
+                <!-- Duplicate Set for Seamless Infinite Loop -->
+                <div class="features-grid" aria-hidden="true">
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-face-smile"></i> Face Attendance
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-money-check-dollar"></i> Payroll
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-folder-kanban"></i> Projects
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-list-check"></i> Tasks
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-users"></i> CRM
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-file-invoice-dollar"></i> Invoices
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-receipt"></i> Expenses
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-calendar-check"></i> Bookings
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-user-shield"></i> Client Portal
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-comments"></i> Team Chat
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-plane-departure"></i> Leaves
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-id-card"></i> KYC
+                  </div>
+                  <div class="feature-tag highlight-tag">
+                    <i class="fa-solid fa-robot"></i> AI Agent
+                  </div>
+                  <div class="feature-tag highlight-tag">
+                    <i class="fa-solid fa-brain"></i> ChatGPT / Claude
+                  </div>
+                  <div class="feature-tag highlight-tag">
+                    <i class="fa-solid fa-plug"></i> MCP
+                  </div>
+                  <div class="feature-tag">
+                    <i class="fa-solid fa-chart-pie"></i> Reports
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VSL Video Frame (With side arrows & bottom checkmarks bar as in screenshot) -->
+          <div class="vsl-container-outer">
+            <!-- Hand-Drawn Doodle Side Arrows -->
+            <div class="vsl-side-arrow arrow-left-vsl">
+              <img src="arrow.svg" alt="arrow" class="doodle-arrow" />
+            </div>
+            <div class="vsl-side-arrow arrow-right-vsl">
+              <img src="arrow.svg" alt="arrow" class="doodle-arrow arrow-flip" />
+            </div>
+
+            <div class="vsl-container">
+              <!-- Electric Purple Border Glow Aura -->
+              <div class="vsl-border-glow"></div>
+
+              <div class="vsl-player-box" id="vslPlayer">
+                <!-- Play Button -->
+                <button
+                  class="vsl-play-btn"
+                  id="playBtn"
+                  aria-label="Play VSL Video"
+                >
+                  <i class="fa-solid fa-play play-icon"></i>
+                </button>
+
+                <!-- Video Modal / Embed Layer -->
+                <div class="video-embed-overlay" id="videoOverlay">
+                  <div class="dummy-video-content">
+                    <iframe
+                      id="vslIframe"
+                      src="https://www.youtube-nocookie.com/embed/LZKVeYRT7Dk?enablejsapi=1"
+                      title="HashBoard VSL Video"
+                      allow="
+                        accelerometer;
+                        autoplay;
+                        clipboard-write;
+                        encrypted-media;
+                        gyroscope;
+                        picture-in-picture;
+                      "
+                      allowfullscreen
+                    >
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trusted By Section -->
+          <div class="trusted-by-section">
+            <p class="trusted-by-title">
+              INTEGRATES WITH & TRUSTED BY YOUR FAVORITE STACK
+            </p>
+            <div class="trusted-logos-grid">
+              <div class="trusted-logo logo-google">
+                <i class="fa-brands fa-google"></i> <span>Google</span>
+              </div>
+              <div class="trusted-logo logo-chatgpt">
+                <i class="fa-solid fa-brain"></i> <span>ChatGPT</span>
+              </div>
+              <div class="trusted-logo logo-zoom">
+                <i class="fa-solid fa-video"></i> <span>Zoom</span>
+              </div>
+              <div class="trusted-logo logo-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> <span>WhatsApp</span>
+              </div>
+              <div class="trusted-logo logo-slack">
+                <i class="fa-brands fa-slack"></i> <span>Slack</span>
+              </div>
+              <div class="trusted-logo logo-notion">
+                <i class="fa-solid fa-note-sticky"></i> <span>Notion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
