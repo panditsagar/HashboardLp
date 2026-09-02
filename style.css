@@ -142,9 +142,10 @@ body {
 
 /* Hero Section Base */
 .hero-section {
-  padding: 20px 20px 80px;
+  padding: 40px 20px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .hero-container {
@@ -192,9 +193,24 @@ body {
   margin: 0 4px;
 }
 
+/* Hero Logo SVG */
+.hero-logo-wrapper {
+  margin-top: 2.5rem;
+  margin-bottom: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-brand-logo {
+  width: 40px;
+   height: auto;
+ 
+}
+
 /* Main Headline */
 .main-headline {
-  margin-top: 4rem;
+  margin-top: 1.2rem;
   font-size: 3.2rem;
   font-weight: 600;
   line-height: 1.25;
@@ -811,3 +827,275 @@ body {
     padding: 8px 14px;
   }
 }
+
+/* ==========================================================================
+   Chaos / Problem Section ("Why Does It Still Run On You?")
+   ========================================================================== */
+
+.chaos-section {
+  padding: 0px 20px 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.chaos-container {
+  max-width: 1050px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.chaos-subhead {
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  color: #c8b8f0;
+  max-width: 680px;
+  margin-bottom: 35px;
+}
+
+/* Master Card Container */
+.chaos-master-card {
+  width: 100%;
+  max-width: 1020px;
+  background: rgba(16, 8, 36, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 28px;
+  padding: 45px 40px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.master-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 36px;
+  text-align: left;
+}
+
+.column-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: 0.2px;
+}
+
+/* Left Side Narrative Column */
+.narrative-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.narrative-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.narrative-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 1.05rem;
+  color: #e2e8f0;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+}
+
+.narrative-icon {
+  color: #c084fc;
+  font-size: 0.95rem;
+  background: rgba(112, 0, 255, 0.18);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.narrative-list strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.verdict-callout {
+  background: rgba(112, 0, 255, 0.12);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  border-radius: 14px;
+  padding: 16px 10px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #e9d5ff;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.1px;
+}
+
+.verdict-callout-icon {
+  font-size: 1.25rem;
+  color: #c084fc;
+  flex-shrink: 0;
+}
+
+.verdict-callout strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Right Side 2x3 Stack Grid */
+.tools-grid-2x3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.app-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 18px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: all 0.3s ease;
+}
+
+.app-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(168, 85, 247, 0.5);
+  transform: translateY(-2px);
+}
+
+.app-card-icon {
+  width: 26px;
+  height: 26px;
+  filter: brightness(0) invert(0.9);
+  flex-shrink: 0;
+}
+
+.app-fa-icon {
+  font-size: 1.4rem;
+  color: #c084fc;
+  flex-shrink: 0;
+}
+
+.app-card-text h4 {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 3px;
+  letter-spacing: -0.2px;
+}
+
+.app-card-text p {
+  font-size: 0.85rem;
+  color: #c4b5fd;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+/* Bottom Punchline Banner & CTA */
+.punchline-banner {
+  background:
+    linear-gradient(#06091a, #06091a) padding-box,
+    linear-gradient(
+        90deg,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0.15) 10%,
+        rgba(255, 255, 255, 0.15) 90%,
+        #ffffff 100%
+      )
+      border-box;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.punchline-glow {
+  display: none;
+}
+
+.punchline-tag {
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #f59e0b;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+
+.punchline-title {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.35;
+  margin-bottom: 24px;
+  max-width: 650px;
+  position: relative;
+  z-index: 2;
+}
+
+.punchline-cta {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.chaos-rating-bar {
+  margin-bottom: 0;
+  margin-top: 4px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.rating-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+@media (max-width: 900px) {
+  .master-card-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .tools-grid-2x3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .chaos-master-card {
+    padding: 25px 20px;
+  }
+}
+
+

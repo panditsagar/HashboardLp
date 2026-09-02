@@ -26,21 +26,21 @@
     <!-- Cyber Grid Background & Ambient Lighting -->
     <div class="bg-grid"></div>
 
-    <!-- SVG Dashed Rings -->
-    <svg class="rings-svg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <!-- Biggest ring -->
-      <circle cx="50%" cy="25%" r="610" class="ring ring-biggest"/>
-      <!-- Outer ring -->
-      <circle cx="50%" cy="25%" r="510" class="ring ring-outer"/>
-      <!-- Middle ring -->
-      <circle cx="50%" cy="25%" r="410" class="ring ring-middle"/>
-    </svg>
-
     <div class="glow-orb orb-left"></div>
     <div class="glow-orb orb-right"></div>
 
     <main>
       <section class="hero-section">
+        <!-- SVG Dashed Rings (Anchored to Hero Section) -->
+        <svg class="rings-svg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Biggest ring -->
+          <circle cx="50%" cy="320" r="610" class="ring ring-biggest"/>
+          <!-- Outer ring -->
+          <circle cx="50%" cy="320" r="510" class="ring ring-outer"/>
+          <!-- Middle ring -->
+          <circle cx="50%" cy="320" r="410" class="ring ring-middle"/>
+        </svg>
+
         <div class="hero-container">
           <!-- Badge Callout -->
           <!-- <div class="badge-wrapper">
@@ -50,6 +50,11 @@
           </div>
         </div>
   -->
+
+          <!-- HashBoard Hero Logo SVG -->
+          <div class="hero-logo-wrapper">
+            <img src="hashai.svg" alt="HashBoard Logo" class="hero-brand-logo" />
+          </div>
 
           <!-- Main Headline -->
           <h1 class="main-headline">
@@ -269,6 +274,151 @@
               </div>
               <div class="trusted-logo">
                 <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/airtable.svg" alt="Airtable" class="brand-logo-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Problem / Chaos Section: "Why Does It Still Run On You?" -->
+      <section class="chaos-section">
+        <div class="chaos-container">
+          <!-- Section Headline -->
+          <h2 class="main-headline chaos-headline">
+            Your Agency Has A Team. <br />
+            Why Does It Still <span class="highlight-purple-box">Run On You?</span>
+          </h2>
+          <p class="chaos-subhead">
+            If everything depends on you, you don’t have a system yet.
+          </p>
+
+          <!-- Integrated Master Card Container -->
+          <div class="chaos-master-card">
+            <!-- Top Grid: Left Narrative vs Right Disconnected Stack -->
+            <div class="master-card-grid">
+              <!-- Left Side: Narrative Story List -->
+              <div class="narrative-column">
+                <ul class="narrative-list">
+                  <li>
+                    <i class="fa-solid fa-xmark narrative-icon"></i>
+                    <span>Your projects are in one app.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-xmark narrative-icon"></i>
+                    <span>Leads in another.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-xmark narrative-icon"></i>
+                    <span>Attendance in a sheet.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-xmark narrative-icon"></i>
+                    <span>Client conversations on WhatsApp.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-xmark narrative-icon"></i>
+                    <span>Invoices somewhere you swear you'll check later.</span>
+                  </li>
+                </ul>
+
+                <div class="verdict-callout">
+                  <i class="fa-solid fa-link-slash verdict-callout-icon"></i>
+                  <p>Each tool works. <strong>They just don't work together.</strong></p>
+                </div>
+              </div>
+
+              <!-- Right Side: 2x3 Jugaad Stack Cards Grid -->
+              <div class="stack-column">
+                <div class="tools-grid-2x3">
+                  <div class="app-card">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg" alt="WhatsApp" class="app-card-icon" />
+                    <div class="app-card-text">
+                      <h4>WhatsApp</h4>
+                      <p>Client communication</p>
+                    </div>
+                  </div>
+
+                  <div class="app-card">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlesheets.svg" alt="Sheets" class="app-card-icon" />
+                    <div class="app-card-text">
+                      <h4>Sheets</h4>
+                      <p>Attendance + finances</p>
+                    </div>
+                  </div>
+
+                  <div class="app-card">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/notion.svg" alt="Notion" class="app-card-icon" />
+                    <div class="app-card-text">
+                      <h4>Notion</h4>
+                      <p>Docs + SOPs</p>
+                    </div>
+                  </div>
+
+                  <div class="app-card">
+                    <i class="fa-solid fa-users app-fa-icon"></i>
+                    <div class="app-card-text">
+                      <h4>CRM</h4>
+                      <p>Leads</p>
+                    </div>
+                  </div>
+
+                  <div class="app-card">
+                    <i class="fa-solid fa-calendar-days app-fa-icon"></i>
+                    <div class="app-card-text">
+                      <h4>Calendly</h4>
+                      <p>Meetings</p>
+                    </div>
+                  </div>
+
+                  <div class="app-card">
+                    <i class="fa-solid fa-diagram-project app-fa-icon"></i>
+                    <div class="app-card-text">
+                      <h4>Project Tool</h4>
+                      <p>Tasks & Billing</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Banner: Human API Punchline & CTA -->
+            <div class="punchline-banner">
+              <div class="punchline-glow"></div>
+              <h3 class="punchline-title">
+                Congratulations. You accidentally became your agency's <span class="highlight-purple-box">API.</span>
+              </h3>
+              <div class="punchline-cta">
+                <a href="#trial" class="btn-primary">
+                  <span>Start Your Free Trial Now</span>
+                  <i class="fa-solid fa-chevron-right btn-icon"></i>
+                </a>
+
+                <!-- Rating Social Proof Bar -->
+                <div class="social-proof-wrapper chaos-rating-bar">
+                  <div class="avatars-group">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Customer" class="avatar" />
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="Customer" class="avatar" />
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80" alt="Customer" class="avatar" />
+                  </div>
+                  <div class="social-stat">
+                    <strong>500+</strong>
+                    <span>Satisfied Customers</span>
+                  </div>
+                  <div class="social-divider"></div>
+                  <div class="rating-info">
+                    <span class="rating-num">4.9/5</span>
+                    <div class="rating-sub">
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <span class="rating-text">Rating</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
