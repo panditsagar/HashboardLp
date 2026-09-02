@@ -154,7 +154,10 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
 }
+
+
 
 /* Badge Callout */
 .badge-wrapper {
@@ -240,7 +243,7 @@ body {
   align-items: center;
   gap: 12px;
   background:
-    linear-gradient(#6a55ff, #6a55ff) padding-box,
+    linear-gradient(#6C00F7, #6C00F7) padding-box,
     linear-gradient(
         90deg,
         #ffffff 0%,
@@ -286,7 +289,7 @@ body {
   transform: translateY(-3px) scale(1.03);
 
   background:
-    linear-gradient(#6a55ff, #6a55ff) padding-box,
+    linear-gradient(#6C00F7, #6C00F7) padding-box,
     linear-gradient(
         90deg,
         #ffffff 0%,
@@ -305,10 +308,10 @@ body {
     linear-gradient(rgba(12, 6, 28, 0.85), rgba(12, 6, 28, 0.85)) padding-box,
     linear-gradient(
         90deg,
-        #6c5ce7 0%,
+        #6C00F7 0%,
         rgba(108, 92, 231, 0.12) 30%,
         rgba(108, 92, 231, 0.12) 70%,
-        #6c5ce7 100%
+        #6C00F7 100%
       )
       border-box;
   border: 2px solid transparent;
@@ -323,17 +326,7 @@ body {
 }
 
 .btn-secondary:hover {
-  background:
-    linear-gradient(rgba(86, 67, 224, 0.25), rgba(86, 67, 224, 0.25))
-      padding-box,
-    linear-gradient(
-        90deg,
-        #8b78ff 0%,
-        rgba(139, 120, 255, 0.25) 30%,
-        rgba(139, 120, 255, 0.25) 70%,
-        #8b78ff 100%
-      )
-      border-box;
+  
   transform: translateY(-3px);
 }
 
@@ -726,17 +719,17 @@ body {
 .trusted-by-section {
   width: 100%;
   max-width: 950px;
-  margin-top: 40px;
+ 
   text-align: center;
 }
 
 .trusted-by-title {
-  font-size: 0.82rem;
-  font-weight: 800;
-  letter-spacing: 2px;
-  color: var(--text-muted);
-  margin-bottom: 24px;
-  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #9ca3af;
+  margin-bottom: 22px;
+  text-transform: none;
 }
 
 .trusted-logos-grid {
@@ -744,77 +737,35 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 36px 45px;
+  gap: 25px 48px;
 }
 
 .trusted-logo {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-size: 1.15rem;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-  color: #e2daf0;
-  opacity: 0.9;
+  justify-content: center;
+  opacity: 0.75;
   transition: all 0.3s ease;
   cursor: default;
 }
 
-.trusted-logo i {
-  font-size: 1.4rem;
+.brand-logo-img {
+  height: 26px;
+  width: auto;
+  filter: brightness(0) invert(0.7);
   transition: all 0.3s ease;
-}
-
-/* Official Brand Colors */
-.logo-google i {
-  color: #4285f4;
-  filter: drop-shadow(0 0 8px rgba(66, 133, 244, 0.5));
-}
-.logo-chatgpt i {
-  color: #10a37f;
-  filter: drop-shadow(0 0 8px rgba(16, 163, 127, 0.5));
-}
-.logo-zoom i {
-  color: #2d8cff;
-  filter: drop-shadow(0 0 8px rgba(45, 140, 255, 0.5));
-}
-.logo-whatsapp i {
-  color: #25d366;
-  filter: drop-shadow(0 0 8px rgba(37, 211, 102, 0.5));
-}
-.logo-slack i {
-  color: #ecb22e;
-  filter: drop-shadow(0 0 8px rgba(236, 178, 46, 0.5));
-}
-.logo-notion i {
-  color: #ffffff;
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
 }
 
 .trusted-logo:hover {
   opacity: 1;
-  color: #ffffff;
-  transform: translateY(-3px) scale(1.05);
+  transform: translateY(-2px);
 }
 
-.logo-google:hover i {
-  filter: drop-shadow(0 0 16px #4285f4);
+.trusted-logo:hover .brand-logo-img {
+  filter: brightness(0) invert(1);
 }
-.logo-chatgpt:hover i {
-  filter: drop-shadow(0 0 16px #10a37f);
-}
-.logo-zoom:hover i {
-  filter: drop-shadow(0 0 16px #2d8cff);
-}
-.logo-whatsapp:hover i {
-  filter: drop-shadow(0 0 16px #25d366);
-}
-.logo-slack:hover i {
-  filter: drop-shadow(0 0 16px #e01e5a);
-}
-.logo-notion:hover i {
-  filter: drop-shadow(0 0 16px #ffffff);
-}
+
+
 
 /* Mobile Responsiveness */
 @media (max-width: 640px) {
