@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+
 /* CSS Variables & Theme Setup (AI Clones Deep Royal Violet Style) */
 :root {
   --bg-dark: #0a0218;
@@ -841,7 +843,7 @@ body {
    ========================================================================== */
 
 .chaos-section {
-  padding: 0px 20px 100px;
+  padding: 40px 20px 100px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -854,6 +856,13 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+.chaos-headline {
+  font-size: clamp(1.85rem, 3.2vw, 2.5rem);
+  line-height: 1.25;
+  letter-spacing: -1px;
+  margin-top: 10px;
+  margin-bottom: 12px;
 }
 
 .chaos-subhead {
@@ -1105,5 +1114,308 @@ body {
     padding: 25px 20px;
   }
 }
+
+/* ==========================================================================
+   Section 3: Six Departments. One Damn Dashboard.
+   ========================================================================== */
+
+.departments-section {
+  padding: 0px 20px 80px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.departments-container {
+  max-width: 1120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.departments-headline {
+  font-size: clamp(1.85rem, 3.2vw, 2.5rem);
+  line-height: 1.25;
+  letter-spacing: -1px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.departments-tagline {
+  font-family: "Caveat", cursive, sans-serif !important;
+  font-size: clamp(1.6rem, 3.2vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #e9d5ff;
+  background: linear-gradient(135deg, #ffffff 0%, #e9d5ff 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 25px rgba(192, 132, 252, 0.4);
+  margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   Section 3: 6 Departments Bento Layout (Matching Reference Design)
+   ========================================================================== */
+
+.departments-bento-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 960px;
+  margin: 35px auto 45px;
+}
+
+/* Bento Row: Left 3D Box + Center Hexagon + Right Content */
+.bento-row {
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  
+  width: 100%;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Alternate Rows (Zig-Zag / Opposite side) */
+.bento-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.bento-row:hover {
+  transform: translateY(-4px);
+}
+
+/* Left 3D Icon Card */
+.bento-icon-card {
+  flex: 0 0 230px;
+  background: rgba(18, 9, 44, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+
+.bento-row:hover .bento-icon-card {
+  border-color: rgba(168, 85, 247, 0.5);
+}
+
+.bento-3d-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  z-index: 2;
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.5));
+  transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.bento-row:hover .bento-3d-img {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+.bento-icon-glow {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(112, 0, 255, 0.35), transparent 70%);
+  filter: blur(25px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Center Hexagon Number Badge */
+.bento-hex-badge {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  width: 66px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto -22px;
+  z-index: 6;
+  flex-shrink: 0;
+  font-size: 1.6rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+  color: #ffffff;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.bento-row:hover .bento-hex-badge {
+  transform: scale(1.14);
+}
+
+/* Hexagon Palette */
+.hex-cyan {
+  background: linear-gradient(135deg, #0284c7, #38bdf8);
+  filter: drop-shadow(0 4px 14px rgba(2, 132, 199, 0.65));
+}
+
+.hex-orange {
+  background: linear-gradient(135deg, #ea580c, #fb923c);
+  filter: drop-shadow(0 4px 14px rgba(234, 88, 12, 0.65));
+}
+
+.hex-emerald {
+  background: linear-gradient(135deg, #059669, #34d399);
+  filter: drop-shadow(0 4px 14px rgba(5, 150, 105, 0.65));
+}
+
+.hex-purple {
+  background: linear-gradient(135deg, #7c3aed, #c084fc);
+  filter: drop-shadow(0 4px 14px rgba(124, 58, 237, 0.65));
+}
+
+.hex-rose {
+  background: linear-gradient(135deg, #e11d48, #fb7185);
+  filter: drop-shadow(0 4px 14px rgba(225, 29, 72, 0.65));
+}
+
+.hex-ai {
+  background: linear-gradient(135deg, #7000ff, #d8b4fe);
+  filter: drop-shadow(0 4px 18px rgba(112, 0, 255, 0.85));
+}
+
+/* Right Content Card */
+.bento-content-card {
+  flex: 1;
+  background: rgba(16, 8, 36, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 26px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease;
+}
+
+.bento-row:hover .bento-content-card {
+  border-color: rgba(168, 85, 247, 0.5);
+}
+
+.bento-title {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.4px;
+  margin-bottom: 8px;
+}
+
+.bento-desc {
+  font-size: 1.05rem;
+  color: #c8b8f0;
+  line-height: 1.6;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+/* Feature Pills */
+.dept-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.dept-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 13px;
+  border-radius: var(--border-radius-pill);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+}
+
+.dept-pill:hover {
+  background: rgba(112, 0, 255, 0.28);
+  border-color: rgba(168, 85, 247, 0.55);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.dept-pill i {
+  font-size: 0.76rem;
+  color: #c084fc;
+  transition: color 0.2s;
+}
+
+.dept-pill:hover i {
+  color: #ffffff;
+}
+
+ 
+ 
+ 
+
+/* Section 3 CTA Button Wrapper */
+.departments-cta-wrapper {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints for Section 3 Bento
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .bento-row,
+  .bento-row:nth-child(even) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .bento-icon-card {
+    flex: none;
+    width: 100%;
+    height: 130px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .bento-3d-img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .bento-hex-badge {
+    margin: -25px auto -25px;
+  }
+
+  .bento-content-card {
+    border-radius: 0 0 20px 20px;
+    padding: 34px 20px 22px;
+    text-align: center;
+  }
+
+  .bento-card-header {
+    justify-content: center;
+  }
+
+  .dept-pills {
+    justify-content: center;
+  }
+}
+
 
 
