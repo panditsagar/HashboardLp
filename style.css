@@ -1824,11 +1824,16 @@ body {
 }
 
 .comparison-tagline {
-  font-family: "Caveat", cursive, sans-serif !important;
-  font-size: clamp(1.45rem, 2.6vw, 1.95rem);
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  color: #c084fc;
+ font-family: "Caveat", cursive, sans-serif !important;
+  font-size: clamp(1.6rem, 3.2vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #e9d5ff;
+  background: linear-gradient(135deg, #ffffff 0%, #e9d5ff 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 25px rgba(192, 132, 252, 0.4);
   margin-bottom: 36px;
   max-width: 820px;
 }
@@ -1939,7 +1944,7 @@ body {
   grid-template-columns: 1fr 44px 1fr;
   align-items: center;
   gap: 22px;
-  background: linear-gradient(135deg, rgba(20, 10, 36, 0.75) 0%, rgba(10, 5, 22, 0.88) 100%);
+background: rgba(16, 8, 36, 0.75);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   padding: 20px 28px;
@@ -2061,21 +2066,27 @@ body {
   }
 
   .compare-flow-header {
-    grid-template-columns: 1fr;
-    gap: 12px;
-    text-align: center;
-    padding: 16px 0;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 14px;
+    padding: 18px 0;
   }
 
-  .col-problem,
+  .col-problem {
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 4px;
+  }
+
   .col-solution {
-    justify-content: center;
-    padding: 0;
-    text-align: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 4px;
   }
 
   .compare-header-center {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .compare-flow-card {
@@ -2104,6 +2115,10 @@ body {
   .comparison-section {
     padding: 20px 16px 70px;
   }
+.comparison-headline {
+  font-size: 1.6rem;
+   
+}
 
   .compare-flow-card {
     padding: 16px 18px;
@@ -2122,8 +2137,30 @@ body {
     line-height: 1.45;
   }
 
+  .compare-flow-header {
+    grid-template-columns: 1fr auto 1fr;
+    gap: 8px;
+    padding: 14px 0;
+    margin-bottom: 20px;
+  }
+
+  .compare-header-col {
+    gap: 6px;
+  }
+
+  .compare-header-emoji {
+    font-size: 1.25rem;
+  }
+
   .compare-header-title {
-    font-size: 1.2rem;
+    font-size: clamp(0.85rem, 3.4vw, 1.1rem);
+    white-space: nowrap;
+  }
+
+  .compare-header-center .flow-arrow-circle {
+    width: 32px;
+    height: 32px;
+    font-size: 11px;
   }
 
   .comparison-cta-wrap,
