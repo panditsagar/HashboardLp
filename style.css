@@ -1793,3 +1793,348 @@ body {
     font-size: 0.8rem;
   }
 }
+
+/* ==========================================================================
+   Section 4: Comparison Section (The Broken Stack vs HashBoard OS)
+   ========================================================================== */
+
+.comparison-section {
+  padding: 40px 20px 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.comparison-container {
+  max-width: 1120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.comparison-headline {
+  font-size: clamp(1.9rem, 3.4vw, 2.65rem);
+  line-height: 1.25;
+  letter-spacing: -1.1px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.comparison-tagline {
+  font-family: "Caveat", cursive, sans-serif !important;
+  font-size: clamp(1.45rem, 2.6vw, 1.95rem);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #c084fc;
+  margin-bottom: 36px;
+  max-width: 820px;
+}
+
+/* ==========================================================================
+   Reference Image Layout 2: Central Timeline Transformation Flow
+   ========================================================================== */
+
+.compare-flow-container {
+  width: 100%;
+  max-width: 1020px;
+  margin: 20px auto 40px;
+  position: relative;
+}
+
+/* Central Vertical Dashed Line */
+.compare-flow-line {
+  position: absolute;
+  top: 36px;
+  bottom: 25px;
+  left: 50%;
+  width: 1px;
+  border-left: 1.5px dashed rgba(255, 255, 255, 0.18);
+  transform: translateX(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Header Row (Dashed Top & Bottom) */
+.compare-flow-header {
+  display: grid;
+  grid-template-columns: 1fr 44px 1fr;
+  align-items: center;
+  gap: 22px;
+  padding: 22px 0;
+  border-top: 1px dashed rgba(255, 255, 255, 0.15);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 2;
+}
+
+.compare-header-col {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.col-problem {
+  justify-content: flex-end;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.col-solution {
+  justify-content: flex-start;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.compare-header-emoji {
+  font-size: 1.6rem;
+}
+
+.compare-header-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+}
+
+ 
+
+.compare-header-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center Arrow Circle */
+.flow-arrow-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #0D081C;
+  border: 1px dashed rgba(255, 255, 255, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e2e8f0;
+  font-size: 13px;
+  position: relative;
+  z-index: 3;
+ }
+
+/* Comparison Cards List */
+.compare-flow-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Single Box Per Row (Matching media_1788764187029.png) */
+.compare-flow-card {
+  display: grid;
+  grid-template-columns: 1fr 44px 1fr;
+  align-items: center;
+  gap: 22px;
+  background: linear-gradient(135deg, rgba(20, 10, 36, 0.75) 0%, rgba(10, 5, 22, 0.88) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px 28px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  position: relative;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Vertical Dashed Line on the Box itself */
+.compare-flow-card::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: 50%;
+  width: 1px;
+  border-left: 1.5px dashed rgba(255, 255, 255, 0.25);
+  transform: translateX(-50%);
+  z-index: 2;
+  pointer-events: none;
+  transition: border-color 0.25s ease;
+}
+
+.compare-flow-card:hover::before {
+  border-left-color: rgba(168, 85, 247, 0.5);
+}
+
+.compare-flow-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(168, 85, 247, 0.4);
+ }
+
+ 
+
+/* Row Center Column */
+.flow-row-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+}
+
+/* Column Inside Card */
+.flow-col {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+  z-index: 3;
+}
+
+/* Left: Problem Column (Right Aligned towards center) */
+.flow-col-problem {
+  justify-content: flex-end;
+  text-align: left;
+}
+
+/* Right: Solution Column (Left Aligned) */
+.flow-col-solution {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.flow-col p {
+  font-size: 0.94rem;
+  line-height: 1.5;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+.flow-col-solution p {
+  color: #f1f5f9;
+}
+
+.flow-col strong {
+  color: #ffffff;
+  font-weight: 700;
+  margin-right: 2px;
+}
+
+.flow-col-solution strong {
+  color: #e9d5ff;
+}
+
+.flow-tool-icon {
+  width: 30px;
+  height: 30px;
+  min-width: 24px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  flex-shrink: 0;
+}
+
+.hash-flow-icon {
+  width: 28px;
+  height: 28px;
+  min-width: 24px;
+ }
+
+/* Section Action CTA */
+.comparison-cta-wrap {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 860px) {
+  .compare-flow-line,
+  .compare-flow-card::before {
+    display: none;
+  }
+
+  .compare-flow-header {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .col-problem,
+  .col-solution {
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+  }
+
+  .compare-header-center {
+    display: none;
+  }
+
+  .compare-flow-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 18px 20px;
+  }
+
+  .flow-col-problem {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .flow-row-center {
+    transform: rotate(90deg);
+    margin: 4px auto;
+  }
+
+  .flow-col-solution {
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .comparison-section {
+    padding: 20px 16px 70px;
+  }
+
+  .compare-flow-card {
+    padding: 16px 18px;
+    border-radius: 12px;
+  }
+
+  .flow-tool-icon,
+  .hash-flow-icon {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+  }
+
+  .flow-col p {
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+
+  .compare-header-title {
+    font-size: 1.2rem;
+  }
+
+  .comparison-cta-wrap,
+  .comparison-cta-wrap .btn-primary {
+    width: 100%;
+  }
+
+  .comparison-cta-wrap .btn-primary {
+    justify-content: center;
+  }
+}
+
+
+
