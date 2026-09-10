@@ -2205,5 +2205,54 @@ background: rgba(16, 8, 36, 0.75);
   }
 }
 
+/* ==========================================================================
+   Site Footer
+   ========================================================================== */
+
+.site-footer {
+  width: 100%;
+  padding: 18px 20px 36px;
+  color: rgba(226, 232, 240, 0.72);
+  position: relative;
+  background: rgba(6, 9, 26, 0.45);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.site-footer-container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.site-footer p {
+  
+  margin: 0 auto 12px;
+  font-size: 0.7rem;
+  line-height: 1.75;
+}
+
+.site-footer .site-footer-copyright {
+  margin-top: 18px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .site-footer {
+    padding: 4px 16px 28px;
+  }
+
+  .site-footer-container {
+    padding-top: 24px;
+  }
+
+  .site-footer p {
+    font-size: 0.7rem;
+    line-height: 1.65;
+  }
+
+}
+
 
 
